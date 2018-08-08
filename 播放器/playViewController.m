@@ -34,6 +34,7 @@
     [button addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
     [self addChildViewController:self.playerVC];
     [self.view addSubview:self.playerVC.view];
+    
 }
 
 -(ZackZxViewController *)playerVC{
