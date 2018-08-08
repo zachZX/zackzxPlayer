@@ -17,7 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     return YES;
+}
+
+-(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    if (self.allowRotation) {
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    }else{
+        return UIInterfaceOrientationMaskPortrait;
+    }
 }
 
 
